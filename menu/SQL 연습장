@@ -1,1 +1,20 @@
+** FROM 에 서브쿼리를 넣는 인라인 뷰 
 
+* Q. 평균 주문 건수 보다 많이 주문한 고객을 찾으시오. 
+
+```SQL
+SELECT CONCAT( first_name, ' ', last_name)
+FROM customer
+WHERE customer_id IN (
+	SELECT COUNT(*)
+    FROM payment
+    GROUP BY customer_id -- 고객별 주문 횟수
+    HAVING COUNT(*) > (
+		SELECT AVG(payment_count) -- 평균횟수
+        FROM (
+			SELECT COUNT(*) AS payment_count
+            FROM payment
+            GROUP BY customer_id
+        )AS payment_counts
+    ) -- FROM 에서 평균횟수구한 표 제작
+);
