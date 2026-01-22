@@ -1,3 +1,6 @@
+// style/blogContentsStyle.js 수정
+const postimgtitleStyle = `hidden`; // 'hidden' 키워드를 넣으면 테일윈드에 의해 숨겨집니다.
+
 // menu style
 const menuListStyle = `md:ml-10 text-base leading-snug text-surface hover:text-graylv3 font-medium capitalize`;
 
