@@ -179,17 +179,17 @@ function createCardElement(fileInfo, index) {
     card.classList.add(...bloglistCardStyle.split(" "));
   }
 
-  if (fileInfo.thumbnail) {
-    const img = document.createElement("img");
-    img.src = fileInfo.thumbnail;
-    img.alt = fileInfo.title;
-    if (index === 0) {
-      img.classList.add(...bloglistFirstCardImgStyle.split(" "));
-    } else {
-      img.classList.add(...bloglistCardImgStyle.split(" "));
-    }
-    card.appendChild(img);
-  }
+  // if (fileInfo.thumbnail) {
+  //   const img = document.createElement("img");
+  //   img.src = fileInfo.thumbnail;
+  //   img.alt = fileInfo.title;
+  //   if (index === 0) {
+  //     img.classList.add(...bloglistFirstCardImgStyle.split(" "));
+  //   } else {
+  //     img.classList.add(...bloglistCardImgStyle.split(" "));
+  //   }
+  //   card.appendChild(img);
+  // }
 
   const cardBody = document.createElement("div");
   cardBody.classList.add(...bloglistCardBodyStyle.split(" "));
