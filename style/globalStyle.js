@@ -1,5 +1,5 @@
-// style/blogContentsStyle.js 수정
-const postimgStyle = `hidden`; // 'hidden' 키워드를 넣으면 테일윈드에 의해 숨겨집니다.
+// // style/blogContentsStyle.js 수정
+// const postimgStyle = `hidden`; // 'hidden' 키워드를 넣으면 테일윈드에 의해 숨겨집니다.
 
 // menu style
 const menuListStyle = `md:ml-10 text-base leading-snug text-surface hover:text-graylv3 font-medium capitalize`;
@@ -15,9 +15,9 @@ const posth4Style = `text-2xl font-bold mb-2 mt-4`;
 const posth5Style = `text-xl font-bold mb-2 mt-4`;
 const posth6Style = `text-lg font-bold mb-2 mt-4`;
 
-const postpStyle = `text-lg my-6 font-normal tracking-wide text-justify`;
-const postimgStyle = `border-4 border-graylv1 rounded my-10 mx-auto block max-w-full h-auto align-middle`;
-const postaStyle = `text-lg text-primary underline hover:bg-activation transition duration-200`;
+// const postpStyle = `text-lg my-6 font-normal tracking-wide text-justify`;
+// const postimgStyle = `border-4 border-graylv1 rounded my-10 mx-auto block max-w-full h-auto align-middle`;
+// const postaStyle = `text-lg text-primary underline hover:bg-activation transition duration-200`;
 
 const postulStyle = `list-disc list-inside text-lg font-normal tracking-wide text-justify`;
 const postolStyle = `list-decimal list-inside text-lg font-normal tracking-wide text-justify`;
